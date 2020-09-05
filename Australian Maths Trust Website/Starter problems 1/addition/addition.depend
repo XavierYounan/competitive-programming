@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1591915530 source:c:\users\009023\documents\cp\australian maths trust website\starter problems 1\addition\main.cpp
+	<iostream>
+	<fstream>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1592021088 source:c:\users\009023\documents\cp\australian maths trust website\aio senior 2005\curry\main.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+

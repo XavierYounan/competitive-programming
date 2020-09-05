@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1592016859 source:c:\users\009023\documents\cp\australian maths trust website\starter problems 3\friendlist\main.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+

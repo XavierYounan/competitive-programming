@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1592015925 source:c:\users\009023\documents\cp\australian maths trust website\starter problems 3\trippl\main.cpp
+	<iostream>
+	<fstream>
+

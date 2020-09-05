@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1592006713 source:c:\users\009023\documents\cp\australian maths trust website\stater problems 2\drough\main.cpp
+	<iostream>
+	<fstream>
+

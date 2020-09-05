@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1591949923 source:c:\users\009023\documents\cp\australian maths trust website\stater problems 2\tiktaktree\main.cpp
+	<iostream>
+	<fstream>
+

@@ -25,6 +25,8 @@ typedef vector<vi> vvi;
 
 
 
+
+
 /* N is the number of cities. */
 int N;
 
@@ -39,6 +41,11 @@ int K;
 
 int answer;
 
+
+queue<int> bfs; //node name is int
+bool seen[100005];
+
+
 int main(void) {
     /* Open the input and output files. */
     FILE *input_file = fopen("evadingin.txt", "r");
@@ -47,42 +54,7 @@ int main(void) {
     /* Read the value of N, E, X and K. */
     fscanf(input_file, "%d%d%d%d", &N, &E, &X, &K);
 
-    vvi trips;
-    trips.resize(N, vector<int>(0));
 
-    X -=1;
-
-    /* Read in the pairs of adjacent cities. */
-    for (int i = 0; i < E; i++) {
-        //Read in a pair of adjacent cities, into variables a and b.
-        int a;
-        int b;
-        fscanf(input_file, "%d%d", &a, &b);
-
-        a -=1;
-        b -=1;
-
-        trips[a].push_back(b);
-        trips[b].push_back(a);
-    }
-
-    vi next(0);
-    vi curr(1,X);
-
-    for(int ii=0; ii<K; ii++){
-
-        for(int i=0; i<curr.size(); i++){
-            int a = curr[i];
-            next.insert(next.end(), trips[a].begin(), trips[a].end());
-
-        }
-
-        curr = next;
-        next.clear();
-    }
-
-
-    answer = curr.size();
 
     /* Write the answer to the output file. */
     fprintf(output_file, "%d\n", answer);
